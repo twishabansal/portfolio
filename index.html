@@ -8,6 +8,7 @@
    ================================================== -->
    <meta charset="utf-8">
 	<title>Twisha Bansal</title>
+   <link rel="shortcut icon" href="images/code.png" >
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -28,7 +29,7 @@
 
    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
+	<!--  -->
 
 </head>
 
@@ -46,7 +47,6 @@
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#projects">Projects</a></li>
-            <!-- <li><a class="smoothscroll" href="#work">Work</a></li> -->
 	         <li><a class="smoothscroll" href="#skills">Skills</a></li>
             <li><a class="smoothscroll" href="#experience">Experience</a></li>
             <li><a class="smoothscroll" href="#achievements">Achievements</a></li>
@@ -64,16 +64,16 @@
             </span></h3>
             <hr/>
             <ul class="social">
-               <li><a href="https://www.linkedin.com/in/twishabansal/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://github.com/twishabansal"><i class="fa fa-github"></i></a></li>
-               <li><a href="mailto: twishabansal07@gmail.com"><i class="fa fa-envelope"></i></a></li>
-               <li><a href="https://twitter.com/twishabansal"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/twishabansal/" target = "_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/twishabansal" target = "_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="mailto: twishabansal07@gmail.com" target = "_blank"><i class="fa fa-envelope"></i></a></li>
+               <li><a href="https://twitter.com/twishabansal" target = "_blank"><i class="fa fa-twitter"></i></a></li>
             </ul>
          </div>
       </div>
 
       <p class="scrolldown">
-         <a class="smoothscroll" href="#experience"><i class="icon-down-circle"></i></a>
+         <a class="smoothscroll" href="#achievements"><i class="icon-down-circle"></i></a>
       </p>
 
    </header> <!-- Header End -->
@@ -97,7 +97,8 @@
                      <img src="images/projects/image_colorisation.png" alt="image_colorisation">
                      <div class="container">
                        <h4><b>Image Colourisation</b></h4>
-                       <button onclick="location.href='https://github.com/twishabansal/Image-Colourisation'" type="button">Github</button>
+                       <button onclick="window.open('https://github.com/twishabansal/Image-Colourisation', '_blank'); return false;" type="button">Github</button>
+                       <button onclick="window.open('https://image-colouriser-streamlit.herokuapp.com/', '_blank'); return false;" type="button" >Deployed</button>
                      </div>
                    </div>
           		</div> <!-- item end -->
@@ -107,7 +108,8 @@
                      <img src="images/projects/data_analysis.png" alt="Data Analysis">
                      <div class="container">
                        <h4><b>Netflix Data Analysis</b></h4>
-                       <button onclick="location.href='https://github.com/twishabansal/Data-Analysis'" type="button">Github</button>
+                       <button onclick="window.open('https://github.com/twishabansal/Data-Analysis', '_blank'); return false;" type="button" >Github</button>
+                       <!-- <button onclick="location.href='https://github.com/twishabansal/Data-Analysis'" type="button" target = "_blank" >Github</button> -->
                      </div>
           		</div> <!-- item end -->
 
@@ -117,39 +119,6 @@
 
    </section> <!-- projects Section End-->
 
-   <!--  work Section
-   ================================================== -->
-   <!-- <section id="work">
-
-      <div class="row work">
-
-         <h1><span>Work</span></h1>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Google</h3>
-                  <p class="info">Google STEP Intern<span>&bull;</span> <em class="date">June 2021 - Aug 2021</em></p>
-
-                  <p>
-                  Upcoming
-                  </p>
-
-               </div>
-
-            </div> --><!-- item end -->
-            <!--
-         </div> --><!-- main-col end -->
-<!--
-      </div>--> <!-- End Work -->
-
-   <!-- </section>  -->
-   
-   <!-- work Section End -->
-
    <!-- Skills
       ----------------------------------------------- -->
    <section id="skills">
@@ -158,18 +127,22 @@
          <h1><span>Skills</span></h1>
          <div class="four columns">
             <div class="skill-card">
-               <h3>Languages</h3>
-            <ul><li>C++</li><li>Python</li></ul>
+               <div class = "skill-cat"><h3>Languages</h3></div>
+               <div class = "skill-list"><ul><li>C++</li><li>Python</li><li>C</li></ul></div>
             </div>
             
          </div>
          <div class="four columns">
-            <h3>Industry Knowledge</h3>
-            <ul><li>Machine Learning</li><li>Deep Learning</li><li>Data Analysis</li></ul>
+            <div class="skill-card">
+               <h3>Industry Knowledge</h3>
+               <ul><li>Data Structures and Algorithms</li><li>Machine Learning</li><li>Deep Learning</li><li>Data Analysis</li></ul>
+            </div>
          </div>
          <div class="four columns">
-            <h3>Tools and Technologies</h3>
-            <ul><li>Pytorch</li><li>Git</li><li>LateX</li></ul>
+            <div class="skill-card">
+               <h3>Tools and Tech</h3>
+               <ul><li>Pytorch</li><li>Git</li><li>LateX</li><li>HTML</li></ul>
+            </div>
          </div>
       </div>
    </section>
@@ -229,10 +202,10 @@
          <div class="twelve columns">
 
             <ul class="social-links">
-               <li><a href="https://www.linkedin.com/in/twishabansal/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://github.com/twishabansal"><i class="fa fa-github"></i></a></li>
-               <li><a href="mailto: twishabansal07@gmail.com"><i class="fa fa-envelope"></i></a></li>
-               <li><a href="https://twitter.com/twishabansal"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/twishabansal/" target = "_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/twishabansal" target = "_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="mailto: twishabansal07@gmail.com" target = "_blank"><i class="fa fa-envelope"></i></a></li>
+               <li><a href="https://twitter.com/twishabansal" target = "_blank"><i class="fa fa-twitter"></i></a></li>
             </ul>
 
          </div>
